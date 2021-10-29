@@ -20,7 +20,7 @@
       
       if(empty($errors)==true){
          move_uploaded_file($file_tmp,"upload/".$file_name);
-         header("Location: http://localhost/assets/index.html?link=https://assets.xlera.org/upload/".$file_name, TRUE, 301);
+         header("Location: https://assets.xlera.org/index.html?link=https://assets.xlera.org/upload/".$file_name, TRUE, 301);
 		 exit();
       }else{
          print_r($errors);
